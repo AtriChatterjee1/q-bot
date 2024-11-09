@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 load_dotenv() 
 with st.sidebar:
-    gemini_api_key = os.getenv("API_KEY")
+    gemini_api_key = ${{ secrets.gemini_api_key }}
     
 
 st.title("💬 Chatbot")
